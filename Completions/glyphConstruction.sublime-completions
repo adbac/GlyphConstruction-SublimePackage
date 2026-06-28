@@ -1,0 +1,143 @@
+{
+    "scope": "source.glyphConstruction",
+    "completions": [
+        // Keywords
+        {
+            "trigger": "center",
+            "contents": "center",
+            "annotation": "position",
+            "kind": "keyword",
+            "details": "Positioning reference: center."
+        },
+        {
+            "trigger": "top",
+            "contents": "top",
+            "annotation": "position",
+            "kind": "keyword",
+            "details": "Positioning reference: top."
+        },
+        {
+            "trigger": "bottom",
+            "contents": "bottom",
+            "annotation": "position",
+            "kind": "keyword",
+            "details": "Positioning reference: bottom."
+        },
+        {
+            "trigger": "innerTop",
+            "contents": "innerTop",
+            "annotation": "position",
+            "kind": "keyword",
+            "details": "Positioning reference: innerTop."
+        },
+        {
+            "trigger": "innerBottom",
+            "contents": "innerBottom",
+            "annotation": "position",
+            "kind": "keyword",
+            "details": "Positioning reference: innerBottom."
+        },
+        {
+            "trigger": "left",
+            "contents": "left",
+            "annotation": "position",
+            "kind": "keyword",
+            "details": "Positioning reference: left."
+        },
+        {
+            "trigger": "right",
+            "contents": "right",
+            "annotation": "position",
+            "kind": "keyword",
+            "details": "Positioning reference: right."
+        },
+        {
+            "trigger": "innerLeft",
+            "contents": "innerLeft",
+            "annotation": "position",
+            "kind": "keyword",
+            "details": "Positioning reference: innerLeft."
+        },
+        {
+            "trigger": "innerRight",
+            "contents": "innerRight",
+            "annotation": "position",
+            "kind": "keyword",
+            "details": "Positioning reference: innerRight."
+        },
+        {
+            "trigger": "origin",
+            "contents": "origin",
+            "annotation": "position",
+            "kind": "keyword",
+            "details": "Positioning reference: origin."
+        },
+        {
+            "trigger": "width",
+            "contents": "width",
+            "annotation": "position",
+            "kind": "keyword",
+            "details": "Positioning reference: width."
+        },
+        {
+            "trigger": "descender",
+            "contents": "descender",
+            "annotation": "dimension",
+            "kind": "keyword",
+            "details": "Font dimension attribute: descender."
+        },
+        {
+            "trigger": "ascender",
+            "contents": "ascender",
+            "annotation": "dimension",
+            "kind": "keyword",
+            "details": "Font dimension attribute: ascender."
+        },
+        {
+            "trigger": "capHeight",
+            "contents": "capHeight",
+            "annotation": "dimension",
+            "kind": "keyword",
+            "details": "Font dimension attribute: capHeight."
+        },
+        {
+            "trigger": "xHeight",
+            "contents": "xHeight",
+            "annotation": "dimension",
+            "kind": "keyword",
+            "details": "Font dimension attribute: xHeight."
+        },
+        // Complex structures
+        {
+            "trigger": "color-mark",
+            "annotation": "color",
+            "contents": "! ${1:0}, ${2:0}, ${3:0}, ${4:1}",
+            "details": "The color mark of the glyph."
+        },
+        {
+            "trigger": "matrix",
+            "annotation": "matrix",
+            "contents": "${1:1}, ${2:0}, ${3:0}, ${4:1}, ${5:0}, ${6:0}",
+            "details": "The transformation matrix of the component."
+        },
+        // Comment variables
+        {
+            "trigger": "overwrite",
+            "annotation": "comment-var",
+            "contents": "# OverwriteExistingGlyphs: ${1:True}",
+            "details": "Comment variable: OverwriteExistingGlyphs"
+        },
+        {
+            "trigger": "auto",
+            "annotation": "comment-var",
+            "contents": "# AutoUnicodes: ${1:True}",
+            "details": "Comment variable: AutoUnicodes"
+        },
+        {
+            "trigger": "mark",
+            "annotation": "comment-var",
+            "contents": "# MarkGlyphs: ${1:0}, ${2:0}, ${3:0}, ${4:1}",
+            "details": "Comment variable: MarkGlyphs"
+        },
+    ]
+}

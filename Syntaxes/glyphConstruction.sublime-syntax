@@ -1,0 +1,62 @@
+%YAML 1.2
+---
+# http://www.sublimetext.com/docs/syntax.html
+name: GlyphConstruction
+file_extensions:
+  - glyphConstruction
+  - glyphconstruction
+  - gc
+scope: source.glyphConstruction
+
+contexts:
+  main:
+    - match: '^(include)\((.*)\)'
+      captures:
+        1: entity.name.function.glyphConstruction
+        2: string.other.glyphConstruction
+    - include: comments
+    - match: '\.([a-zA-Z_][a-zA-Z0-9_]*)?'
+      scope: string.other.glyphConstruction
+    - match: (=|\+|&|@|,|:|\.|\^|#|!|~|\|'|`|"|-|\/|\*)
+      scope: keyword.operator.glyphConstruction
+    - match: '(\?)?([a-zA-Z_\{][a-zA-Z0-9_.\{\}]*)((\s|\\\s)*=)'
+      captures:
+        1: keyword.other.glyphConstruction
+        2: variable.glyphConstruction
+        3: keyword.operator.glyphConstruction
+    - include: keywords
+    - match: '(\$)(\s*[a-zA-Z_][a-zA-Z0-9_]*)\s*(\=)\s*(.*)()'
+      captures:
+        1: keyword.other.glyphConstruction
+        2: variable.glyphConstruction
+        3: keyword.operator.glyphConstruction
+        4: string.other.glyphConstruction
+        5: keyword.other.glyphConstruction
+    - match: '\{[a-zA-Z_][a-zA-Z0-9_]*\}'
+      scope: entity.name.function.glyphConstruction
+    - include: operators
+    - include: numbers
+    - include: whitespace
+    - match: '[a-zA-Z][a-zA-Z0-9]*'
+      scope: variable.parameter.glyphConstruction
+  comments:
+    - match: '#.*$'
+      scope: comment.line.number-sign.glyphConstruction
+  keywords:
+    - match: '(descender|xHeight|capHeight|ascender|origin|width|height|left|innerLeft|right|innerRight|top|innerTop|bottom|innerBottom|center)'
+      scope: entity.name.tag.glyphConstruction
+  numbers:
+    - match: '(\|)[\s|\\\s]*([a-fA-F0-9]{4,})'
+      scope: constant.numeric.hex.glyphConstruction
+    - match: '(\d+\.\d*|\d*\.\d+)([eE][+-]?[0-9]+)?j?\%?'
+      scope: constant.numeric.float.glyphConstruction
+    - match: '\d+[eE][+-]?[0-9]+j?\%?'
+      scope: constant.numeric.float.glyphConstruction
+    - match: \d+j?\%?
+      scope: constant.numeric.integer.glyphConstruction
+  operators:
+    - match: \-|\+|\/|\*
+      scope: keyword.operator.glyphConstruction
+  whitespace:
+    - match: \s+
+      scope: text.whitespace.glyphConstruction
