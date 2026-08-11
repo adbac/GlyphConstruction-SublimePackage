@@ -1,6 +1,6 @@
 # GlyphConstruction language support for Sublime Text
 
-This package provides support in Sublime Text (3+) for the GlyphConstruction language, used to describe how glyph shapes are built.
+This package provides support in Sublime Text (3+) for the [GlyphConstruction language](https://github.com/typemytype/GlyphConstruction), used to describe how glyph shapes are built.
 
 The package provides:
 
