@@ -9,10 +9,10 @@ The package provides:
 - Comments support
 - Smart typing pairs (quotes, parentheses, brackets)
 
-<!-- ## Installation (with Package Control)
+## Installation (with Package Control)
 
 1. Package Control: Install Package `GlyphConstruction`
-2. Restart Sublime Text -->
+2. Restart Sublime Text
 
 ## Contributing
 
